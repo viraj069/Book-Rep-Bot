@@ -1,0 +1,105 @@
+:root {
+  --bg: #fdf8f2;
+  --paper: #fbf4ed;
+  --text: #3c2d2a;
+  --accent: #a57c4d;
+  --serif‑font: 'Merriweather', serif;
+  --measure: 65ch;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 1rem auto;
+  max-width: 800px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif‑font);
+  font-size: 1.125rem;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+.content {
+  background: var(--paper);
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  max-width: var(--measure);
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.book-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
+.book-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.book-card .author {
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.book-card .synopsis {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.chatbot-section {
+  margin-top: 2rem;
+}
+
+.chatbot-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#bot-container {
+  background: white;
+  min-height: 300px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+
+img {
+     min-height: 300px;
+     width: 680px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.8rem;
+
+
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
